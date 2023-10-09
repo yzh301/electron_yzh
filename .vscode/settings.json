@@ -1,13 +1,4 @@
 {
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true, // 开启eslint自动检测
@@ -22,4 +13,254 @@
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode", // 指定 prettier 为所有文件默认格式化器
   "json.schemaDownload.enable": false,
+  "editor.fontFamily": " CaskaydiaCove Nerd Font Mono Operator Mono cascadia-code",
+  "editor.lineHeight": 24,
+  "editor.fontLigatures": true,
+  "explorer.decorations.badges": false,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+  "explorer.confirmDelete": false,
+  "alias-skip.mappings": {
+    "@": "/src"
+  },
+  "better-comments.tags": [
+    {
+      "tag": "!", // 关键字（不区分大小写），Better Comments 检测到关键字后才会将这行注释转换样式
+      "color": "#FF2D00", // 文字颜色
+      "strikethrough": false, // 是否显示删除线
+      "underline": false, // 是否显示下划线
+      "backgroundColor": "transparent", // 背景颜色
+      "bold": false, // 是否加粗
+      "italic": false // 是否启用斜体文字
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+  // 高亮颜色
+  "indentRainbow.colors": [
+    "rgba(40,140,160,0.3)",
+    "rgba(40,160,140,0.3)",
+    "rgba(60,140,140,0.3)",
+    "rgba(60,160,160,0.3)"
+  ],
+  // tabSize 错误时的高亮颜色
+  "indentRainbow.errorColor": "rgba(128,32,32,0.6)",
+  // 混用空格和 tab 缩进时的高亮颜色
+  "indentRainbow.tabmixColor": "rgba(128,32,96,0.6)",
+  // 需要高亮显示的文件类型
+  "indentRainbow.includedLanguages": [
+    "vue",
+    "html",
+    "js"
+  ],
+  // tab 大小为2个空格
+  "editor.tabSize": 2,
+  "editor.unfoldOnClickAfterEndOfLine": false,
+  // 100 列后换行
+  "editor.wordWrapColumn": 180,
+  // 开启 vscode 文件路径导航
+  "breadcrumbs.enabled": true,
+  // 格式化插件设置为 prettier
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  /*  prettier的配置 */
+  "prettier.printWidth": 120, // 超过最大值换行
+  "prettier.tabWidth": 2, // 缩进字节数
+  "prettier.useTabs": false, // 缩进不使用tab，使用空格
+  "prettier.semi": true, // 句尾添加分号
+  "prettier.singleQuote": false, // 使用单引号代替双引号
+  "prettier.proseWrap": "preserve", // 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
+  "prettier.arrowParens": "always", //  (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
+  "prettier.bracketSpacing": true, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
+  "prettier.endOfLine": "lf", // 结尾是 \n \r \n\r auto
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "prettier.ignorePath": ".prettierignore", // 不使用prettier格式化的文件填写在项目的.prettierignore文件中
+  "prettier.jsxSingleQuote": false, // 在jsx中使用单引号代替双引号
+  "prettier.requireConfig": false, // Require a 'prettierconfig' to format prettier
+  "prettier.trailingComma": "es5",
+  // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
+  //vue自动补全
+  "files.associations": {
+    "*.js": "javascript",
+    "*.sess": "css"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "css-auto-prefix.prefixes": {
+    "transform": [
+      "webkit",
+      "moz",
+      "ms",
+      "o"
+    ],
+    "transition": [
+      "webkit",
+      "moz",
+      "ms",
+      "o"
+    ],
+    "border-radius": [
+      "webkit",
+      "moz",
+      "ms",
+      "o"
+    ],
+    "animation": [
+      "webkit"
+    ],
+    "box-reflect": [
+      "webkit"
+    ],
+    "filter": [
+      "webkit"
+    ],
+    "font-feature-settings": [
+      "webkit",
+      "moz"
+    ],
+    "backface-visibility": [
+      "webkit"
+    ],
+    "box-decoration-break": [
+      "webkit"
+    ],
+    "hyphens": [
+      "webkit",
+      "moz",
+      "ms"
+    ],
+    "marquee-direction": [
+      "webkit"
+    ],
+    "marquee-play-count": [
+      "webkit"
+    ],
+    "marquee-speed": [
+      "webkit"
+    ],
+    "marquee-style": [
+      "webkit"
+    ],
+    "text-combine-upright": [
+      "webkit",
+      "moz",
+      "ms"
+    ],
+    "text-decoration-color": [
+      "moz"
+    ],
+    "text-decoration-line": [
+      "moz"
+    ],
+    "text-decoration-style": [
+      "moz"
+    ],
+    "text-orientation": [
+      "webkit"
+    ],
+    "writing-mode": [
+      "webkit",
+      "ms"
+    ]
+  },
+  "files.eol": "\r\n",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "editor.accessibilitySupport": "off",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "errorLens.exclude": [
+    "Option 'importsNotUsedAsValues' is deprecated and will stop functioning in TypeScript 5\\.5\\. Specify compilerOption '\"ignoreDeprecations\": \"5\\.0\"' to silence this error\\.  Use 'verbatimModuleSyntax' instead\\."
+  ],
+  "git.openRepositoryInParentFolders": "never",
+  "Codegeex.Privacy": true,
+  "Codegeex.Comment.LanguagePreference": "zh-CN",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[scss]": {
+    "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+  },
+  "gitlens.graph.minimap.enabled": false,
 }
