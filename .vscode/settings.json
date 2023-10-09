@@ -20,5 +20,6 @@
     "vue",
     "html"
   ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode" // 指定 prettier 为所有文件默认格式化器
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // 指定 prettier 为所有文件默认格式化器
+  "json.schemaDownload.enable": false,
 }
