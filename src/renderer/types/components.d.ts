@@ -15,5 +15,7 @@ declare module "vue" {
     ElSwitch: (typeof import("element-plus/es"))["ElSwitch"];
     IEpEdit: (typeof import("~icons/ep/edit"))["default"];
     IEpPlus: (typeof import("~icons/ep/plus"))["default"];
+    RouterLink: (typeof import("vue-router"))["RouterLink"];
+    RouterView: (typeof import("vue-router"))["RouterView"];
   }
 }

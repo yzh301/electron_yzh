@@ -248,7 +248,7 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[less]": {
-    "editor.defaultFormatter": "vscode.css-language-features"
+    "editor.defaultFormatter": "Wscats.eno"
   },
   "editor.accessibilitySupport": "off",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -263,4 +263,9 @@
     "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
   },
   "gitlens.graph.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  }
 }
